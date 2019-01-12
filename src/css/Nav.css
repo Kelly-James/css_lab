@@ -1,0 +1,49 @@
+.navContainer {
+    left: 0;
+    top: 10px;
+}
+
+.nav {
+    background: rgba(81, 56, 94, 0.5);
+    /* background-color: blueviolet; */
+    height: 35px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menuBtnFrame {
+    border: 2px solid rgba(207, 192, 200, 0.5);
+    left: 5px; 
+    max-height: 25px;
+    min-height: 25px;
+    max-width: 25px; 
+    min-width: 25px; 
+    position: relative;
+    top: 3px;
+}
+
+.menuBtnFrame:hover {
+    border: 2px solid rgba(211, 175, 194, 0.5);
+    cursor: pointer;
+}
+
+.menuBtnLine {
+    background-color: rgba(207, 192, 200, 0.5);
+    min-height: 2px;
+    margin: 4px;
+    position: absolute;
+    width: 17px;
+}
+
+.btnLine1 {
+    top: 1px;
+}
+
+.btnLine2 {
+    top: 7.5px;
+}
+
+.btnLine3 {
+    top: 14px;
+}

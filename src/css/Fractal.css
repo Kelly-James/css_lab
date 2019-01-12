@@ -1,0 +1,157 @@
+.colorPulse {
+  animation: colorPulse 25s ease-in-out infinite alternate;
+}
+
+@keyframes colorPulse {
+  0% {
+    border-color: rgb(0, 255, 127);
+  }
+  50% {
+    border-color: rgb(255, 127, 0);
+  }
+  100% {
+    border-color: rgb(127, 0, 255);
+  }
+}
+
+.pulse {
+  animation: pulseFrames 2s ease-in-out infinite alternate;
+  transform: scale(1);
+  transition: all 5s;
+}
+
+@keyframes pulseFrames {
+  0% {
+    transform: scale(1);
+  }
+  /* 25% {
+    transform: scale(-0.75);
+  }
+  50% {
+    transform: scale(0.5);
+  } */
+  100% {
+    transform: scale(2);
+  }
+}
+
+.gridFrame {
+  animation: rotateRev 10s ease-in-out infinite alternate;
+  background-color: rgb(0, 0, 0);
+  border: .25px solid rgb(92, 72, 83);;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  right: 30%;
+  top: 10%;
+}
+
+@keyframes rotateRev {
+  0% {
+    border-radius: 0%;
+    transform: rotate(0deg) scale(0.5);
+  }
+  100% {
+    border-radius: 100%;
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
+.gridWrapper2 {
+  animation: rotate 25s ease-in-out infinite;
+  display: grid;
+  grid-auto-rows: 100px;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-areas: 
+    "a b c d e"
+    "f g g g h"
+    "i g g g j"
+    "k g g g l"
+    "m n o p q";
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.gridCell {
+  /* animation: colorPulse 25s ease-in-out infinite alternate; */
+  background-color: rgb(0, 0, 0);
+  border: 1px solid whitesmoke;
+}
+
+.topLft {
+  grid-area: a;
+}
+
+.topMidLft {
+  grid-area: b;
+}
+
+.topCtr {
+  grid-area: c;
+}
+
+.topMidRt {
+  grid-area: d;
+}
+
+.topRt {
+  grid-area: e;
+}
+
+.lftTopMid {
+  grid-area: f;
+}
+
+.lftMidCtr {
+  grid-area: i;
+}
+
+.lftBotMid {
+  grid-area: k;
+}
+
+.center {
+  border-radius: 50%;
+  grid-area: g;
+}
+
+.rtTopMid {
+  grid-area: h;
+}
+
+.rtMidCtr {
+  grid-area: j;
+}
+
+.rtBotMid {
+  grid-area: l;
+}
+
+.botLft {
+  grid-area: m;
+}
+
+.botMidLft {
+  grid-area: n;
+}
+
+.botCtr {
+  grid-area: o;
+}
+
+.botMidRight {
+}
+
+.botRight {
+  grid-area: q;
+}
